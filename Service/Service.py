@@ -9,7 +9,7 @@ class Service:
 
     def __init__(self, fileName):
         self.__file = fileName
-        self.__gaParameters = GAParams(10, 100, 0.7, 0.15)
+        self.__gaParameters = GAParams(10, 5000, 0.7, 0.15)
         self.__probParameters = 0
 
     def solve(self):

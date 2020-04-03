@@ -59,6 +59,5 @@ class GA:
             if off.fitness < bestOff.fitness:
                 bestOff = off
 
-        if bestOff.fitness < self.worst_chromosome().fitness:
-            self.population.remove(self.worst_chromosome())
-            self.population.append(bestOff)
+        self.population.remove(self.worst_chromosome())
+        self.population.append(bestOff)
