@@ -6,7 +6,7 @@ def main():
     medium = "input/100p_fricker26.txt"
     hard = "input/150p_eil51.txt"
 
-    serv = Service(easy[0])
+    serv = Service(easy[2])
     serv.solve()
 
 main()

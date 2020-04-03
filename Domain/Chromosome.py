@@ -4,7 +4,7 @@ from random import randint, random, shuffle
 class Chromosome:
     def __init__(self, problParam=None):
         self.problParam = problParam
-        self.representation = list(range(problParam.dim))
+        self.representation = list(range(problParam.size))
         shuffle(self.representation)
         self.fitness = self.problParam.function(self.representation, self.problParam.network)
 
